@@ -1,0 +1,11 @@
+-# This page shows movie with same director. If there is not a movie with the same director
+-# The link will go back to the home page
+Movies with the same director: <br>
+<br>
+
+- @movies.each do |movie|
+    = "- " + movie.title
+    <br>
+<br>
+<br>
+= link_to 'Back to movie list', movies_path
